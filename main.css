@@ -1,0 +1,140 @@
+:root {
+    --active-hover-button: #6C63ff;
+    --main-text-color: rgba(10, 6, 67, .74);
+    --background-skewed-bg: #ebe8fc;
+    --section-padding: 40px;
+    --h1-font-size: calc(20px + (35 - 20) * ((100vw - 300px) / (1600 - 300)));
+    --p-font-size: calc(10px + (15 - 10) * ((100vw - 300px) / (1600 - 300)));
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: var(--h1-font-size);
+    font-weight: 500;
+}
+
+
+p {
+    font-size: var(--p-font-size);
+}
+
+.mainWrapper {
+    margin: 20px 70px;
+    overflow: hidden;
+    
+    
+}
+
+.svg-blue-bg {
+    position: absolute;
+    overflow: hidden;
+    padding: 0 !important;
+    bottom: 0;
+}
+
+nav ul li {
+    margin-left: 120px;
+    font-size: var(--p-font-size);
+}
+
+
+.headerWrapper {
+    margin: 50px auto;
+    
+}
+
+
+
+.head-text {
+    text-align: center;  
+    color: var(--main-text-color); 
+}
+.head-text p {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+
+button {
+    width: 70%;
+    margin: 40px auto;
+    padding: 10px;
+    font-size: var(--h1-font-size);
+    background-color: var(--active-hover-button);
+    border:none;
+    border-radius: 1px;
+}
+
+button:hover {
+    background-color: var(--background-skewed-bg);
+    border: 1px var(--main-text-color) solid;
+    color: var(--main-text-color);
+    
+
+    transition: all .5s;
+
+
+}
+
+button {
+    color:white;
+    text-decoration: none;
+}
+
+a:hover {text-decoration: none;}
+
+.img svg {
+    height: 60vh;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1440px){
+    .img svg {
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .img svg {
+        height:35vh;
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .img svg {
+        height: 25vh;
+    }
+    .mainWrapper {
+        margin: 20px 0;
+    }
+    nav ul li {
+        margin-left: 50px;
+    }
+
+    .head-text p {
+        margin: 0 20px;
+    }
+}
+
+@media only screen and (max-width:425px){
+    .navbar {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+
+.col-md-6 {
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+}
